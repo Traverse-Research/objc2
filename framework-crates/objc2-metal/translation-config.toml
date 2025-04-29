@@ -59,6 +59,8 @@ class.MTLInstanceAccelerationStructureDescriptor.methods."setInstancedAccelerati
 class.MTLInstanceAccelerationStructureDescriptor.methods."setInstanceCount:".unsafe = false
 class.MTLInstanceAccelerationStructureDescriptor.methods."setInstanceDescriptorBuffer:".unsafe = false
 
+protocol.MTLAccelerationStructureCommandEncoder.methods."updateFence:".unsafe = false
+protocol.MTLAccelerationStructureCommandEncoder.methods."waitForFence:".unsafe = false
 protocol.MTLAccelerationStructureCommandEncoder.methods."buildAccelerationStructure:descriptor:scratchBuffer:scratchBufferOffset:".unsafe = false
 protocol.MTLAccelerationStructureCommandEncoder.methods."writeCompactedAccelerationStructureSize:toBuffer:offset:".unsafe = false
 protocol.MTLAccelerationStructureCommandEncoder.methods."copyAndCompactAccelerationStructure:toAccelerationStructure:".unsafe = false
@@ -125,6 +127,7 @@ class.MTLCaptureDescriptor.methods."setOutputURL:".unsafe = false
 protocol.MTLCaptureScope.methods.beginScope.unsafe = false
 protocol.MTLCaptureScope.methods.endScope.unsafe = false
 protocol.MTLCaptureScope.methods.label.unsafe = false
+protocol.MTLCaptureScope.methods."setLabel:".unsafe = false
 
 # Note: MTLCaptureManager is not documented thread-safe, so
 # +sharedCaptureManager is not safe either, since we do interior mutation here.
