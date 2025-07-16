@@ -12,3 +12,14 @@ This README is kept intentionally small to consolidate the documentation, see
 
 This crate is part of the [`objc2` project](https://github.com/madsmtm/objc2),
 see that for related crates.
+
+### Debugging Metal applications
+
+Apple documents their debugging facilities [here](https://developer.apple.com/documentation/xcode/metal-debugger).
+
+> [!TIP]
+> The tracing layer may fail encoding assertions, 
+
+#### Debugging in Xcodee
+
+
